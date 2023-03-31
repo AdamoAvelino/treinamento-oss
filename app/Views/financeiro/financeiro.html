@@ -1,13 +1,25 @@
-{% extends "layout/main.html" %}
+{% extends "layout/main.html"%}
 
-{% block content %}
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-        </div>
-    </div>
-{% endblock %}
+{% block content%}
+{{ include('component/ola.html')}}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NOME</th>
+        <th scope="col">IDADE</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for financeiro in financeiros %}
+      <tr>
+        <td>{{financeiro.id}}</td>
+        <td>{{financeiro.nome}}</td>
+        <td>{{financeiro.idade}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{%endblock%}

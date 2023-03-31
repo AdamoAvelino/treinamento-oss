@@ -30,8 +30,8 @@ $app->get('/criar', function() {
 });
 
 $app->get('/financeiro', function() {
-    $produto = new FinanceiroController;
-    $produto->listarConta();
+    $financeiro = new FinanceiroController;
+    $financeiro->listarConta();
 });
 
 $app->get('/cliente', function(){
