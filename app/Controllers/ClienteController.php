@@ -8,6 +8,7 @@ class ClienteController extends Controller
 {
     public function listarClientes()
     {
+        
         $cliente_model = new ClienteModel;
         $clientes = $cliente_model->listar();
         $response = [
