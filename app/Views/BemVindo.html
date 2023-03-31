@@ -9,61 +9,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800;900&display=swap" rel="stylesheet">    <title>Document</title>
-    <style>
-        body {
-            
-            background-color: rgb(250, 253, 255);
-        }
-        .logo {
-            width: 100%;            
-        }
-        .title-framework {
-            font-size: 2.2rem;
-            /* text-transform: uppercase; */
-            
-        }
-        .logos-technology {
-            width: 100px;
-            border-radius: 50%;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800;900&display=swap" rel="stylesheet">    
+    <title>Treinamento OSSS</title>
 </head>
 <body class='h-100'>
-    <div class="container-fluid h-100">
-        <div class='row'>
-            <div class='col-12 d-flex flex-column'>
-                <span class='title-framework'>QUAESTUM</span>
-                <span style='margin-left: 10%'>Basic Structure Development</span>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
         </div>
-        <hr>
-        <div class="row d-flex align-items-center">
-            <div class="col-3">
-                <img class='logo' src="./assets/image/logoQuae.svg">
-            </div>
-            <div class='col-8'>
-                <div class='row'>
-                    <div class="col-12">
-                        <p>
-                            Estrutura básica de desenvolvimento web utilizando PHP para processamentos de programas backend e Javascript para frontend
-                        </p>
-                    </div>
-                    <div class="col-12">
-                        <hr>
-                        <h2 class='mb-5'>Technologys </h2>
-                        <div class='d-flex justify-content-between'>
-                            <img class='logos-technology' src="./assets/image/slim.jpg" alt="">
-                            <img class='logos-technology' src="./assets/image/twig.jpg" alt="">
-                            <img class='logos-technology' src="./assets/image/bootstrap.png" alt="">
-                            <img class='logos-technology' src="./assets/image/composer.jpg" alt="">
-                            <img class='logos-technology' src="./assets/image/npm.jpg" alt="">
-                            <img class='logos-technology' src="./assets/image/webpack.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      </nav>
 </body>
 </html>
