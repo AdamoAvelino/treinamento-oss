@@ -1,0 +1,25 @@
+{% extends "layout/main.html"%}
+
+{% block content%}
+{{ include('component/ola.html')}}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NOME</th>
+        <th scope="col">IDADE</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for cliente in clientes %}
+      <tr>
+        <td>{{cliente.id}}</td>
+        <td>{{cliente.nome}}</td>
+        <td>{{cliente.idade}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{%endblock%}

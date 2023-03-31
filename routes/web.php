@@ -1,7 +1,9 @@
 <?php
 
+use App\Controllers\ClienteController;
 use App\Controllers\Home;
 use App\Controllers\ProdutoController;
+use App\Controllers\FinanceiroController;
 
 $authi = function ($nome) {
     return function() use($nome) {
@@ -22,5 +24,14 @@ $app->get('/produto', function() {
     $produto->listarProdutos();
 });
 
+$app->get('/financeiro', function() {
+    $produto = new FinanceiroController;
+    $produto->listarConta();
+});
+
+$app->get('/cliente', function(){
+    $cliente = new ClienteController;
+    $cliente->listarClientes();
+});
 
 
