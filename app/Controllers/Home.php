@@ -12,7 +12,7 @@ class Home extends Controller
 {
     public function index()
     {
-        $this->app->render('BemVindo');
+        $this->app->render('BemVindo', ['pagina' => 'Bem Vindo!', 'descricao' => 'Ao Treinamento da oss desenvolvimento']);
     }
 
     public function listar()
