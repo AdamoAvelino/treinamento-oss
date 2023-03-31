@@ -1,5 +1,6 @@
 <?php
 
+use App\Controllers\ClienteController;
 use App\Controllers\Home;
 use App\Controllers\ProdutoController;
 use App\Controllers\FinanceiroController;
@@ -26,6 +27,11 @@ $app->get('/produto', function() {
 $app->get('/financeiro', function() {
     $produto = new FinanceiroController;
     $produto->listarConta();
+});
+
+$app->get('/cliente', function(){
+    $cliente = new ClienteController;
+    $cliente->listarClientes();
 });
 
 
