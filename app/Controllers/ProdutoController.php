@@ -20,4 +20,9 @@ class ProdutoController extends Controller
         
         $this->app->render('produto.produto', $response);
     }
+
+    public function criar() 
+    {
+        $this->app->render('produto.formulario');
+    }
 }

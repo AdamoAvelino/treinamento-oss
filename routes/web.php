@@ -24,6 +24,11 @@ $app->get('/produto', function() {
     $produto->listarProdutos();
 });
 
+$app->get('/criar', function() {
+    $produto = new ProdutoController;
+    $produto->criar();
+});
+
 $app->get('/financeiro', function() {
     $produto = new FinanceiroController;
     $produto->listarConta();

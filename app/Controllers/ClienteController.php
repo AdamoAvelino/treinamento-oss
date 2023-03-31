@@ -16,6 +16,6 @@ class ClienteController extends Controller
             'descricao' => 'Pagina para usuarios visualizarem informações dos clientes'
         ];
 
-        $this->app->render('Cliente.index', $response);
+        $this->app->render('cliente.index', $response);
     }
 }
